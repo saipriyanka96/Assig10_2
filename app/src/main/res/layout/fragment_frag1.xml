@@ -1,0 +1,55 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f23535"
+    tools:context="com.example.layout.assig10_2.Frag1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165dp"
+        android:text="Layout1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layout2"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layout3"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:text="Layout4" />
+
+</RelativeLayout>
+    <!--
+     RelativeLayout is a view group that displays child views in relative positions.
+    ID-Any View object may have an integer ID associated with it, to uniquely identify the View within the tree.
+     When the application is compiled, this ID is referenced as an integer, but the ID is typically assigned in the layout XML file
+      as a string, in the id attribute.This is an XML attribute common to all View objects (defined by the View class) and you will use
+      it very often
+    wrap_content tells your view to size itself to the dimensions required by its content.
+    match_parent tells your view to become as big as its parent view group will allow.
+    TextSize will give size of the text-->
